@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netlify Deployment Guide | 2026 Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00d1b2;
+            --dark: #1e1e1e;
+            --light: #f4f4f4;
+            --text: #333;
+            --bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 60px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--dark);
+            border-bottom: 4px solid var(--primary);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .tip {
+            background: #e6fffa;
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .tip strong {
+            color: #0d9488;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 40px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Netlify Deployment Guide</h1>
+        <p>This guide explains how to deploy your projects from GitHub to Netlify for automated, continuous deployment.</p>
+        
+        <hr>
+
+        <h2>🚀 Overview</h2>
+        <p>Deploying your project from GitHub to Netlify is like setting up an automated pipeline: once it's linked, every time you push code to GitHub, Netlify automatically updates your live site. It’s one of the smoothest workflows in web development.</p>
+
+        <hr>
+
+        <h2>Phase 1: Connect Your GitHub Account</h2>
+        <ol>
+            <li><strong>Log in to Netlify:</strong> Go to <a href="https://app.netlify.com">app.netlify.com</a> and sign in using your GitHub account.</li>
+            <li><strong>Start a New Project:</strong> Click the <strong>Add new site</strong> button and select <strong>Import an existing project</strong>.</li>
+            <li><strong>Choose Your Provider:</strong> Click the <strong>GitHub</strong> button and authorize permissions.</li>
+        </ol>
+
+        <h2>Phase 2: Select and Configure</h2>
+        <ol>
+            <li><strong>Pick Your Repo:</strong> Search for the repository you want to deploy and click on it.</li>
+            <li><strong>Basic Settings:</strong> 
+                <ul>
+                    <li>Branch: <code>main</code></li>
+                    <li>Base directory: (Leave blank)</li>
+                </ul>
+            </li>
+            <li><strong>Build Settings:</strong> 
+                <ul>
+                    <li>Build command: (Leave blank if it's a simple HTML site)</li>
+                    <li>Publish directory: <code>.</code> (for the current directory)</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>Phase 3: The Big Launch</h2>
+        <ol>
+            <li><strong>Click "Deploy":</strong> Watch the build logs in real-time.</li>
+            <li><strong>Claim Your URL:</strong> You'll get a random link (e.g., sparkly-unicorn.netlify.app).</li>
+            <li><strong>Change Name:</strong> Go to Site configuration > Site details > Change site name.</li>
+        </ol>
+
+        <div class="tip">
+            <strong>💡 Pro-Tip: Continuous Deployment</strong><br>
+            From now on, just <code>git push</code> to your main branch, and your site will update automatically in seconds!
+        </div>
+
+        <p class="footer"><em>Based on content from IRLMEDIA</em></p>
+    </div>
+</body>
+</html>

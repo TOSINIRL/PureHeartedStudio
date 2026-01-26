@@ -1,0 +1,6 @@
+[build]
+  command = ""
+  publish = "."
+
+# This file overrides any settings in the Netlify UI, 
+# fixing the "npm run bulid" error.

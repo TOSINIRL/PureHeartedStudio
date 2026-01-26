@@ -1,6 +1,6 @@
-# PureHearted Studioz
+# PureHeartedStudio
 
-**Live Website:** [https://tosinirl.github.io/IRLMEDIA/](https://tosinirl.github.io/IRLMEDIA/)
+**Live Website:** [https://tosinirl.github.io/PureHeartedStudio/](https://tosinirl.github.io/PureHeartedStudio/)
 
 ---
 

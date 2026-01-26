@@ -10,7 +10,7 @@ def build_wix_file():
         js = f.read()
 
     # Base URL for GitHub Pages
-    base_url = "https://tosinirl.github.io/IRLMEDIA/"
+    base_url = "https://tosinirl.github.io/PureHeartedStudio/"
 
     # Replace CSS Link with inline CSS
     # Handle the specific background image in CSS first

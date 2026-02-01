@@ -97,9 +97,9 @@ button {
     width: auto;
     display: block;
     object-fit: cover;
-    object-position: center 25%;
-    /* Crop to show only the PHS monogram, hiding the text below */
-    clip-path: inset(0 0 30% 0);
+    object-position: center center;
+    /* Crop evenly to show centered PHS monogram */
+    clip-path: inset(15% 10% 35% 10%);
     transition: var(--transition-medium);
     filter: brightness(1.1);
 }

@@ -92,15 +92,12 @@ button {
     align-items: center;
 }
 
-.nav-logo {
-    height: 60px;
-    width: auto;
-    display: block;
-    transition: var(--transition-medium);
-}
-
-.nav-logo:hover {
-    transform: scale(1.05);
+.nav-brand h1 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .nav-menu {

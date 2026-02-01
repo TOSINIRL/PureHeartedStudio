@@ -92,12 +92,21 @@ button {
     align-items: center;
 }
 
-.nav-brand h1 {
-    font-family: var(--font-heading);
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 1px;
+.nav-logo-phs {
+    height: 70px;
+    width: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center 25%;
+    /* Crop to show only the PHS monogram, hiding the text below */
+    clip-path: inset(0 0 30% 0);
+    transition: var(--transition-medium);
+    filter: brightness(1.1);
+}
+
+.nav-logo-phs:hover {
+    transform: scale(1.08);
+    filter: brightness(1.2);
 }
 
 .nav-menu {
